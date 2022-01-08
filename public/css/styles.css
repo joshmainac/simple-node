@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+/* nav-bar */
+nav {
+  display: flex;
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: space-between;
+
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+nav ul li {
+  display: inline-block;
+
+  margin: 10px 20px;
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+nav ul li:hover {
+  border-bottom: 1px solid black;
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  color: black !important;
+}
+/* content-wrapper*/
+.basic-grid {
+  display: grid;
+  gap: 1rem;
+  /* grid-template-columns: repeat(4, 1fr); 4x3 grid, all fit in 1 screen */
+  /* grid-template-columns: repeat(12, minmax(240px, 1fr)); min size, may exceed screen */
+  /* Turely responsive grid */
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+}
+
+.card {
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
